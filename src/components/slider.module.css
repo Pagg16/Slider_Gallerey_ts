@@ -2,7 +2,7 @@
   border: 2px solid blue;
   border-radius: 10px;
   position: relative;
-  background-color: rgb(168, 168, 250);
+  background-color: rgb(120, 120, 255);
   height: 45vh;
   width: 70vw;
   display: flex;
@@ -13,6 +13,11 @@
   height: 100%;
   display: flex;
   align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider__slide__oppasyty {
+  opacity: 0;
 }
 
 .slider__description {
@@ -55,6 +60,20 @@
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+  background: none;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.slider__arrow:focus {
+  border: none;
+  outline: none;
+}
+
+.slider__arrow_hide {
+  display: none;
 }
 
 .slider__arrow_left {
